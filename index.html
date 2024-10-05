@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./frontend/script.js"></script>
+</head>
+<body>
+<h2>Registro de estudiates</h2>
+<div>
+    <form id="adicionarEstudiante">
+        <div>
+            <label for="dni">Ingrese el documento de identidad:</label>
+            <input type="text" id="dni" placeHolder="">
+            <br>
+            <label for="nombre">Ingrese el nombres:</label>
+            <input type="text" id="nombre" placeHolder=""> 
+            <br>
+            <input type="submit" onclick="Guardar()" value="Enviar">      
+</div>
+    </form>
+    <h4>Listar estudiante</h4>
+    <form action="">
+        <div>
+            <form id="listarEstudiantes">
+                <p id="rta">Resultado:</p>
+                <input type="submit" onclick="listar()" value="Aceptar">
+        </div>
+    </form>
+    <h4>Modificar estudiante</h4>
+    <form id="actualizarestudiante">
+        <div>
+            <label for="dni">Documento de identidad:</label>
+            <input type="text" id="dniA" placeHolder="">
+            <br>
+    
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombreA" placeHolder="">
+            <br>
+            <br>
+            <p id="rtaA">Resultado:</p>
+            <input type="submit" onclick="actualizar()" value="Aceptar">
+        </div>
+    </form>
+    <h4>Buscar estudiante</h4>
+<div>
+    <form id="listarunEstudiantes">
+        <label for="document">Identificador del estudiante a buscar:</label>
+        <input type="text" id="document" placeHolder="">    
+        <br>
+        <p id="rtaE">Resultado:</p>
+        <input type="submit" onclick="listar_estudiante()" value="Mostrar">
+   </form>
+</div>
+<h4>Eliminar</h4>
+<div>
+    <form id="eliminarEstudiante">
+        <label for="documento">Identificador del estudiante a borrar:</label>
+        <input type="text" id="documento" placeHolder="">
+        <br>
+        <p id="rtaEE">Resultado:</p>
+        <input type="submit" onclick="eliminar_estudiante()" value="Eliminar">
+    </form>
+</div>
+<h2>Registro de cursos</h2>
+<div>
+    <form id="adicionarCursos">
+    
+            <label for="idcur">Ingrese el codigo del curso:</label>
+            <input type="text" id="idcur" placeHolder="">
+            <br>
+            <label for="nomcur">Ingrese el nombres:</label>
+            <input type="text" id="nomcur" placeHolder=""> 
+            <br>
+            <input type="submit" onclick="Guardarcurso()" value="Enviar"> 
+    </form>
+</div>
+<h4>Listar curso</h4>
+<form action="">
+    <div>
+        <form id="listarcursos">
+            <p id="rta">Resultado:</p>
+            <input type="submit" onclick="listar_cursos()" value="Aceptar">
+    </div>
+</form>
+<h4>Modificar Curso</h4>
+    <form id="actualizarcurso">
+        <div>
+            <label for="idcur">Documento de identidad:</label>
+            <input type="text" id="idcurA" placeHolder="">
+            <br>
+    
+            <label for="nomcur">Nombres:</label>
+            <input type="text" id="nomcurA" placeHolder="">
+            <br>
+            <br>
+            <p id="rtaA">Resultado:</p>
+            <input type="submit" onclick="actualizar_cursos()" value="Aceptar">
+        </div>
+    </form>
+    <h4>Buscar curso</h4>
+<div>
+    <form id="Buscarcuros">
+        <label for="idcur">Identificador del estudiante a buscar:</label>
+        <input type="text" id="document" placeHolder="">    
+        <br>
+        <p id="rtaE">Resultado:</p>
+        <input type="submit" onclick="buscar_cursos()" value="Mostrar">
+   </form>
+</div>
+<h4>Eliminar cursos</h4>
+<div>
+    <form id="eliminarcurso">
+        <label for="idcur"> Codigo del curos para borrar:</label>
+        <input type="text" id="idcur" placeHolder="">
+        <br>
+        <p id="rtaEE">Resultado:</p>
+        <input type="submit" onclick="eliminar_curso()" value="Eliminar">
+    </form>
+</div>
+</body>
+</html>
