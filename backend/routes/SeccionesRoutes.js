@@ -1,6 +1,6 @@
 const express=require("express");
 const cors=require("cors");
-const seccionesscontroller =require("../controllers/seccionescontroller.js");
+const seccionescontroller =require("../controllers/seccionescontroller.js");
 const router=express.Router();
 router.get("/",seccionescontroller.consultar);
 router.post ("/",seccionescontroller.ingresar);

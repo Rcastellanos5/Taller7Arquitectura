@@ -1,5 +1,4 @@
 
-
 function Guardar (){
 let dni="";
 let nombre="";

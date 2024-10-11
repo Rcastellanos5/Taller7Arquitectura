@@ -5,7 +5,7 @@
 <script type="text/javascript" src="./frontend/script.js"></script>
 </head>
 <body>
-<h2>Registro de estudiates</h2>
+<h2>Registro de estudiantes</h2>
 <div>
     <form id="adicionarEstudiante">
         <div>
@@ -94,17 +94,17 @@
             <br>
             <br>
             <p id="rtaA">Resultado:</p>
-            <input type="submit" onclick="actualizar_cursos()" value="Aceptar">
+            <input type="submit" onclick="actualizar_curso()" value="Aceptar">
         </div>
     </form>
     <h4>Buscar curso</h4>
 <div>
-    <form id="Buscarcuros">
+    <form id="Buscarcursos">
         <label for="idcur">Identificador del estudiante a buscar:</label>
         <input type="text" id="document" placeHolder="">    
         <br>
         <p id="rtaE">Resultado:</p>
-        <input type="submit" onclick="buscar_cursos()" value="Mostrar">
+        <input type="submit" onclick="buscar_curso()" value="Mostrar">
    </form>
 </div>
 <h4>Eliminar cursos</h4>
@@ -115,6 +115,72 @@
         <br>
         <p id="rtaEE">Resultado:</p>
         <input type="submit" onclick="eliminar_curso()" value="Eliminar">
+    </form>
+</div>
+</body>
+</html>
+<h2>Registro de secciones </h2>
+<div>
+    <form id="adicionarseccion">
+    
+            <label for="fe">Ingrese la fecha:</label>
+            <input type="text" id="idfe" placeHolder="">
+            <br>
+            <label for="hi">Ingrese la hora inicial:</label>
+            <input type="text" id="hi" placeHolder=""> 
+            <br>
+            <label for="hf">Ingrese la hora final</label>
+            <input type="text" id="hf" placeholder="">
+            <br>
+            <input type="submit" onclick="Guardarseccion()" value="Enviar"> 
+    </form>
+</div>
+<h4>Listar secciones</h4>
+<form action="">
+    <div>
+        <form id="listarsecciones">
+            <p id="rta">Resultado:</p>
+            <input type="submit" onclick="listar_secciones()" value="Aceptar">
+    </div>
+</form>
+<h4>Modificar seccion</h4>
+    <form id="actualizarseccion">
+        <div>
+            <label for="idse">Ingrese el numero de secuencia:</label>
+            <input type="text" id="" placeHolder="">
+            <br>
+    
+            <label for="fe">Ingrese la fecha:</label>
+            <input type="text" id="idfe" placeHolder="">
+            <br>
+            <label for="hi">Ingrese la hora inicial:</label>
+            <input type="text" id="hi" placeHolder=""> 
+            <br>
+            <label for="hf">Ingrese la hora final</label>
+            <input type="text" id="hf" placeholder="">
+            <br>
+            <p id="rtaA">Resultado:</p>
+            <input type="submit" onclick="actualizar_seccion()" value="Aceptar">
+        </div>
+    </form>
+    <h4>Buscar seccion</h4>
+<div>
+    <form id="Buscarseccion">
+        <label for="idse">Identificador el numero de secuencia a buscar:</label>
+        <input type="text" id="idse" placeHolder="">    
+        <br>
+        <p id="rtaE">Resultado:</p>
+        <input type="submit" onclick="buscar_seccion()" value="Mostrar">
+   </form>
+</div>
+<h4>Eliminar secciones</h4>
+<div>
+    <form id="eliminarseccion">
+        <label for="idse"> Numero de secuencia a eliminar:</label>
+        <input type="text" id="idse" placeHolder="">
+        <br>
+        <p id="rtaEE">Resultado:</p>
+        <input type="submit" onclick="eliminar_seccion()" value="Eliminar">
     </form>
 </div>
 </body>

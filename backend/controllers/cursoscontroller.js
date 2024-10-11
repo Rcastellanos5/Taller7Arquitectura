@@ -20,9 +20,9 @@ class cursosController{
     actualizar(req,res){
         const {id} = req.params;
         try{
-            const {id,codigodelcurso} = req.body;
+            const {nombredelcurso,codigodelcurso} = req.body;
             db.query('UPDATE curso SET nombredelcuros=? WHERE codigodelcurso=?;',
-            [dni,nombre],(err,rows) => {
+            [nomcur,id],(err,rows) => {
                 if(err) {
                     res.status (400).send(err.message);
                 }
@@ -54,7 +54,7 @@ class cursosController{
         }
     }
      consultarDetalle(req,res){
-        const {codigodelcurso} = req.params;
+        const {id} = req.params;
         try{
 
             db.query('SELECT  * FROM curso WHERE codigodelcurso=?',
@@ -70,7 +70,7 @@ class cursosController{
 
     }
     borrar(req,res){
-        const {codigodelcurso} = req.params;
+        const {id} = req.params;
         try{
             req.body;
             db.query('DELETE FROM secciones.curso WHERE codigodelcurso=?;',
